@@ -1,0 +1,228 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1023px;
+    }
+}
+
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	color: #212121;
+}
+
+body a:hover, .sub-portfolio{
+	color: #3c24d6;
+}
+
+header.container{
+	padding-top: 80px;
+	text-align: center;
+}
+
+header h1{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 72px;
+	letter-spacing: 0.138889em;
+}
+header nav p{
+	display: none;
+}
+header .current{
+	color: #3c24d6;
+	cursor: default;
+}
+
+
+
+header ul{
+	padding: 25px 0 25px 0;
+}
+
+header ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+}
+
+header ul li a{
+	color: #666666;
+	display: block;
+	font-size: 13px;
+	font-family: 'Cabin', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 16px;
+	letter-spacing: 2px;
+}
+
+header #bg-toggle{
+	display: none;
+}
+
+section.container{
+	text-align: center;
+}
+
+section .col-md{
+	padding: 0;
+}
+section .col-md .img-container{
+	margin: 17px;
+}
+
+section .masonry{
+	margin-top: 34px;
+	column-count: 3;
+	column-gap: 1em;
+}
+
+section .masonry .item{
+	background-color: #eee;
+	display: inline-block;
+	margin: 0 0 1em;
+	width: 100%;
+}
+
+section .about-profile .img-wrap{
+	margin-right: 25px;
+}
+
+section .about-text{
+	width: 50%;
+	margin: 0x 34px 0 34px;
+	text-align: left;
+}
+
+section .about-text h1{
+	margin-bottom: 20px;
+}
+section.container.contact{
+	text-align: left;
+}
+
+section p, section.about ul{
+	text-align: left;
+	color: #424242;
+	font-size: 13px;
+	font-family: proxima-nova, sans-serif;
+}
+
+footer.container{
+	text-align: center;
+	padding-top: 80px;
+}
+
+footer ul{
+	padding: 0;
+	margin: 0;
+}
+footer ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+}
+
+footer ul li a{
+	color: #a8a8a8;
+	padding: 5px;
+}
+
+footer p{
+	color: #a8a8a8;
+	padding: 0;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 1136px){
+	section .masonry{
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	header.container{
+		padding-top: 28px;
+	}
+	header h1{
+		font-size: 41px;
+	}
+  	section .col-md .img-container{
+   		margin: 0 1em 1em;
+   	}
+
+   	section .about-profile .img-wrap{
+		margin: 0 0 17px 0;
+	}
+
+   	section .about-profile{
+   		margin-top: 17px;
+   		margin-bottom: 40px;
+   	}
+   	section .about-text{
+		width: 90%;
+		margin: auto;
+		
+	}
+	
+}
+
+@media only screen and (max-width: 756px){
+	section .masonry{
+		column-count: 1;
+	}
+}
+
+@media only screen and (max-width: 476px) {
+
+	header h1{
+		margin-top:20px;
+	}
+	header nav{
+		margin: auto;
+  		position: absolute;
+ 		top: 0; left: 0; bottom: 0; right: 0;
+ 		display: none;
+ 		z-index: 1;
+	}
+
+	header nav p{
+		text-align: right;
+		margin: 0;
+		display: block;
+	}
+
+	header nav p i{
+		margin: 15px 15px 0 0;
+		font-size: 20px;
+	}
+
+	header ul{
+		background-color: grey;
+		padding-bottom: 100vw;
+	}
+	header ul li{
+		display: block;
+		padding: 15px 0;		
+	}
+	header ul li a{
+		font-size: 20px;
+	}
+
+	header #bg-toggle{
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		z-index: 10;
+	}
+}
